@@ -92,11 +92,11 @@ class Program
 
     private static string? AskWord(int attempt)
     {
-        Console.WriteLine("{0}e beurt. Geef een woord", attempt);
+        Console.WriteLine($"{attempt}e beurt. Geef een woord");
         return Console.ReadLine();
     }
 
-    private static string GenerateWord()
+    static string GenerateWord()
     {
         Random rnd = new Random((int)DateTime.Now.Ticks);
         int idx = rnd.Next(0, wordlist.Length);
