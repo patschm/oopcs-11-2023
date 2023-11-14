@@ -4,6 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
+        int a = 10;
+        int[] aas = new int[5];
+
+        string name = "Kees";
+        string[] names = new string[5];
+
+        Lamp[] lampen = new Lamp[5];
+        
         // Big Bang
         Lamp l1 = new Lamp(300, ConsoleColor.Green);
         //l1.kleur = ConsoleColor.Yellow;
@@ -30,5 +38,6 @@ class Program
 
 
         // Big Crunch
+        
     }
 }

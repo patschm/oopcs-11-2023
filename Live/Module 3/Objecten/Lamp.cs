@@ -31,21 +31,22 @@ public class Lamp
             _lumen = lumen;
         }
     }
-
     public int GetLumen()
     {
         return _lumen;
     }
+
     // Methods. Hierin definieer je gedrag.
     public void Aan()
     {
         Console.BackgroundColor = Kleur;
-        System.Console.WriteLine($"De lamp brandt met {Lumen} lumen");
+        Console.WriteLine($"De lamp brandt met {Lumen} lumen");
         Console.ResetColor();
+        
     }
 
     // Constructor
-    public Lamp()
+    public Lamp() : this(500, ConsoleColor.DarkBlue)
     {
 
     }
