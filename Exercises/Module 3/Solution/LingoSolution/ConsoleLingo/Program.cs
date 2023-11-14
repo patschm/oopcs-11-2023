@@ -46,7 +46,7 @@ class Program
     private static void ShowIQ(int attempt)
     {
         // TODO 2: Rewrite this code by using the IQ enumeration in IQ.cs
-        if (attempt < 5)
+        if (attempt <= 5)
         {
             IQ iq = (IQ)attempt;
             Console.WriteLine("Your IQ level is {0} ", iq);
