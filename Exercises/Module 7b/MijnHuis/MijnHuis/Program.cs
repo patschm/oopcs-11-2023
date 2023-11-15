@@ -14,6 +14,9 @@ internal class Program
         Valkuil valkuil = new Valkuil();
         Lamp lamp = new Lamp();
 
+        lus.Connect(hek);
+        lus.Connect(valkuil);
+        lus.Connect(lamp);
 
 
         lus.Detect();

@@ -1,7 +1,14 @@
-﻿namespace Heras;
+﻿using Afspraken;
 
-public class Hek
+namespace Heras;
+
+public class Hek : IDetectable
 {
+    public void Detecting()
+    {
+        Open();
+    }
+
     public void Open()
     {
         Console.WriteLine("Het hek gaat open");

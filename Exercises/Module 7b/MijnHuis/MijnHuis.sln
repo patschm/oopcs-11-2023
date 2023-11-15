@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoomsdayPreppers", "Doomsda
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrac", "Infrac\Infrac.csproj", "{8A804E0B-338C-44A7-8E35-382FA978D9C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Afspraken", "Afspraken\Afspraken.csproj", "{6D6893F2-B9AC-467A-9EAD-151564F13F1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8A804E0B-338C-44A7-8E35-382FA978D9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A804E0B-338C-44A7-8E35-382FA978D9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A804E0B-338C-44A7-8E35-382FA978D9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6893F2-B9AC-467A-9EAD-151564F13F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6893F2-B9AC-467A-9EAD-151564F13F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6893F2-B9AC-467A-9EAD-151564F13F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6893F2-B9AC-467A-9EAD-151564F13F1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
