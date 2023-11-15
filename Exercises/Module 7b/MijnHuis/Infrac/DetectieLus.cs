@@ -2,9 +2,12 @@
 
 namespace Infrac;
 
+public delegate void DetectHandler();
+
 public class DetectieLus
 {
     private List<IDetectable> devices = new List<IDetectable>();
+    public event DetectHandler Detecting;
 
     public void Connect(IDetectable detectable)
     {
@@ -13,9 +16,10 @@ public class DetectieLus
     public void Detect()
     {
         Console.WriteLine("Hmmm, we zien iets...");
-        foreach (IDetectable device in devices)
-        {
-            device.Detecting();
-        }
+        //foreach (IDetectable device in devices)
+        //{
+        //    device.Detecting();
+        //}
+        Detecting?.Invoke();
     }
 }

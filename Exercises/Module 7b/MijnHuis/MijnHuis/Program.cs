@@ -14,10 +14,13 @@ internal class Program
         Valkuil valkuil = new Valkuil();
         Lamp lamp = new Lamp();
 
-        lus.Connect(hek);
-        lus.Connect(valkuil);
-        lus.Connect(lamp);
+        //lus.Connect(hek);
+        //lus.Connect(valkuil);
+        //lus.Connect(lamp);
 
+        lus.Detecting += hek.Open;
+        lus.Detecting += valkuil.Open;
+        lus.Detecting += lamp.Aan;
 
         lus.Detect();
         //hek.Open(); Niet geaccepteerd.
