@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        object a1 = 3;
+
         ACME firm = new ACME();
         Fabian fabian = new Fabian();
         Ruud ruud = new Ruud();

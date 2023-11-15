@@ -10,8 +10,17 @@ public class Point
         return new Point {X = a.X + b.X, Y = a.Y + b.Y};
     }
 
+    public static explicit operator double(Point p)
+    {
+        return Math.Sqrt(Math.Pow(p.X, 2) + Math.Pow(p.Y, 2)); 
+    }
+
     public void Show()
     {
         System.Console.WriteLine($"({X}, {Y})");
+    }
+    public override string ToString()
+    {
+        return $"({X}, {Y})";
     }
 }
