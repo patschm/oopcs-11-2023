@@ -54,9 +54,9 @@ public class LingoWord : IEnumerable
         // If the character is part of the word but not in the right place a PartialCharacter at that position in the resulting LingoWord
         // If the character is not part of the word you place a LingoCharacter at that position in the resulting LingoWord
         // Hint: First check for the exact characters, then for the partial characters
-        for (int i = 0; i < guess.Count; i++)
+        for (int i = 0; i < resulting.Count; i++)
         {
-            LingoCharacter guessChar = guess[i]!;
+            LingoCharacter guessChar = resulting[i]!;
             foreach (LingoCharacter targetChar in targetWord)
             {
                 if (LingoCharacter.ExactlyEqual(targetChar, guessChar))
@@ -66,9 +66,10 @@ public class LingoWord : IEnumerable
                 }
             }
         }
-        for (int i = 0; i < guess.Count; i++)
+
+        for (int i = 0; i < resulting.Count; i++)
         {
-            LingoCharacter guessChar = guess[i]!;
+            LingoCharacter guessChar = resulting[i]!;
             foreach (LingoCharacter thisChar in targetWord)
             {
                 if (!guessChar.IsExact() &&
